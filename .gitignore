@@ -1,0 +1,35 @@
+# Build
+target/
+.anchor/
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDL
+*.json.d.ts
+
+# Keys
+*.key
+id.json
+keypair.json
+
+# Environment
+.env
+.env.local
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+

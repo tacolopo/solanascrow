@@ -1,0 +1,27 @@
+[workspace]
+
+[package]
+name = "solanascrow"
+version = "0.1.0"
+description = "Solana escrow smart contract with multi-signature approval"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "solanascrow"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+solana-program = "=1.17.0"
+borsh = "=0.10.3"
+thiserror = "1.0"
+spl-token = "=3.5.0"
+
+[dev-dependencies]
+
